@@ -4,9 +4,9 @@
   "description": "Hackathon topic to test tool support with typed JS",
   "main": "index.js",
   "scripts": {
-    "test": "npm run flow; npm run build; mocha build/**/test.js",
+    "test": "npm run flow && npm run build && mocha build/**/test.js",
     "build": "babel ./src --out-dir=./build",
-    "flow": "flow; test $? -eq 0 -o $? -eq 2"
+    "flow": "flow"
   },
   "repository": {
     "type": "git",
