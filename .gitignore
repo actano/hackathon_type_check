@@ -1,5 +1,6 @@
 .*
 *.iml
+npm-debug.log
 node_modules
 !.gitignore
 !.flowconfig
