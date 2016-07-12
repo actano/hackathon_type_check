@@ -21,7 +21,7 @@ class MusicManager extends BasicManager {
 
 class SickManager extends BasicManager {
     disease: string;
-    constructor (name: string = '', disease: string = '') {
+    constructor (name: string, disease: string) {
         super(name);
         this.disease = disease;
     }
