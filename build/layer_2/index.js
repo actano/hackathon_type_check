@@ -3,4 +3,4 @@ const {
     BeerOtherLayer: Beer,
     loadDiseasesOtherLayer: loadDiseases,
     loadMedicinsOtherLayer: loadMedicins
-} = require ('../layer_1')
+} = require('../layer_1');
