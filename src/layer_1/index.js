@@ -74,7 +74,7 @@ function loadMedicins() {
     return store.medicines
 }
 
-module.exports = {
+export {
     Medicine,
     Beer,
     loadDiseases,

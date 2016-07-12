@@ -1,7 +1,7 @@
 // @flow
 
-const {expect} = require('chai')
-const {loadDiseases, SickManager} = require('../layer_1')
+import {expect} from 'chai'
+import {loadDiseases, SickManager} from '../layer_1'
 
 describe('first test', () => {
     it('should load diseases', () => {

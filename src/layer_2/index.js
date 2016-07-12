@@ -1,6 +1,6 @@
-const {
-    MedicineOtherLayer: Medicine,
-    BeerOtherLayer: Beer,
-    loadDiseasesOtherLayer: loadDiseases,
-    loadMedicinsOtherLayer: loadMedicins
-} = require ('../layer_1')
+import {
+    Medicine as MedicineOtherLayer,
+    Beer as BeerOtherLayer,
+    loadDiseases as loadDiseasesOtherLayer,
+    loadMedicins as loadMedicinsOtherLayer
+} from '../layer_1'
