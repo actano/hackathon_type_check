@@ -10,6 +10,9 @@
     },
     "chai/chai.d.ts": {
       "commit": "de82425735f84a10b43921ae4b1d085b3752a626"
+    },
+    "assertion-error/assertion-error.d.ts": {
+      "commit": "de82425735f84a10b43921ae4b1d085b3752a626"
     }
   }
 }
