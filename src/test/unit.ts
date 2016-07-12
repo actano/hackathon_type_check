@@ -1,6 +1,6 @@
 import {expect} from 'chai'
 import {Bier} from '../layer_1'
-import {loadDiseases, loadMedicines} from '../layer_2'
+import {loadDiseases, loadMedicines, createDog} from '../layer_2'
 import {Medicine} from '../layer_1'
 
 describe('first test', () => {
@@ -19,5 +19,11 @@ describe('first test', () => {
         let medicines = loadMedicines();
         expect(medicines).to.be.have.length(4);
         let medicine: Medicine = medicines[0];
+    })
+
+    it('should create dog', () => {
+        let dog = createDog('Wuffi', 10);
+        expect(dog.getName()).to.equal('Wuffi');
+        expect(dog.getAge()).to.equal(11);
     })
 });
