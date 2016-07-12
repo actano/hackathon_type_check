@@ -20,18 +20,19 @@ class MusicManager extends BasicManager {
 }
 
 class SickManager extends BasicManager {
-    disease: string
+    disease: string;
     constructor (name: string = '', disease: string = '') {
         super(name);
         this.disease = disease;
     }
-    greet () {
+    greet (): void {
         super.greet();
         console.log('höhö, I have severe ' + this.disease);
     }
 }
 
 class Medicine {
+    name: string;
     constructor (name: string = '') {
         this.name = name;
     }
@@ -42,20 +43,23 @@ class Medicine {
 }
 
 class Beer extends Medicine {
-    constructor (name, percentage) {
-        super(name)
-        this.percentage = percentage
+    percentage: number;
+    constructor (name: string, percentage: number) {
+        super(name);
+        this.percentage = percentage;
     }
 
-    use() {
+    use(): void {
         console.log('Drinking ' + this.name + '... Hmm, it has ' + this.percentage + '%!');
     }
 }
 
+const medicinesList: Array<Medicine> = [new Medicine('Aspirin'), new Medicine('Tea'), new Medicine('Placebo'), new Beer('Berliner Weisse', 3)];
+const diseasesList: Array<{name: string, deadly: boolean}> = [{name: 'ebola', deadly: 'true'}, {name: 'influenca', deadly: false}, {name: 'aids', deadly: true}]
 
-store = {
-    diseases: [{name: 'ebola', deadly: true}, {name: 'influenca', deadly: false}, {name: 'aids', deadly: true}],
-    medicines: [new Medicine('Aspirin'), new Medicine('Tea'), new Medicine('Placebo'), new Beer('Berliner Weisse', 3)]
+const store = {
+    diseases: diseasesList,
+    medicines: medicinesList
 }
 
 function loadDiseases() {
