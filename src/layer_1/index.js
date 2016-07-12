@@ -1,15 +1,18 @@
+// @flow
+
 class BasicManager {
-    constructor (name) {
+    name: string;
+    constructor (name: string = '') {
         this.name = name;
     }
-    
-    greet () {
+
+    greet (): void {
         console.log('Hello guys, I\'m ' + this.name);
     }
 }
 
 class MusicManager extends BasicManager {
-    greet () {
+    greet (): void {
         console.log('lalalala');
         super.greet();
         console.log('lalalala');
@@ -17,7 +20,8 @@ class MusicManager extends BasicManager {
 }
 
 class SickManager extends BasicManager {
-    constructor (name, disease) {
+    disease: string
+    constructor (name: string = '', disease: string = '') {
         super(name);
         this.disease = disease;
     }
@@ -28,11 +32,11 @@ class SickManager extends BasicManager {
 }
 
 class Medicine {
-    constructor (name) {
+    constructor (name: string = '') {
         this.name = name;
     }
-    
-    use () {
+
+    use (): void {
         console.log('Using ' + this.name);
     }
 }
@@ -42,12 +46,12 @@ class Beer extends Medicine {
         super(name)
         this.percentage = percentage
     }
-    
+
     use() {
-        console.log('Drinking ' + this.name + '... Hmm, it has ' + this.percentage + '%!');   
+        console.log('Drinking ' + this.name + '... Hmm, it has ' + this.percentage + '%!');
     }
 }
-    
+
 
 store = {
     diseases: [{name: 'ebola', deadly: true}, {name: 'influenca', deadly: false}, {name: 'aids', deadly: true}],
