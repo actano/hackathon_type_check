@@ -7,7 +7,7 @@
     "test": "npm run flow && mocha",
     "build": "babel ./src --out-dir=./build",
     "clean": "rm -rf ./build",
-    "flow": "flow",
+    "flow": "./node_modules/flow-bin/cli.js",
     "coffee-flow": "coffee -o ./build -c ./src && npm run flow"
   },
   "repository": {
