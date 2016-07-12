@@ -1,0 +1,23 @@
+{
+  "name": "hackathon_type_check",
+  "version": "1.0.0",
+  "description": "Hackathon topic to test tool support with typed JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha src/**/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/actano/hackathon_type_check.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/actano/hackathon_type_check/issues"
+  },
+  "homepage": "https://github.com/actano/hackathon_type_check#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
