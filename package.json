@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/actano/hackathon_type_check#readme",
   "devDependencies": {
+    "babel-cli": "^6.10.1",
     "babel-plugin-transform-flow-strip-types": "^6.8.0",
     "chai": "^3.5.0",
     "flow-bin": "^0.28.0",
