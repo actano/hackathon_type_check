@@ -59,7 +59,12 @@ type Diseases = Array<{name: string, deadly: boolean}>;
 type Store = {diseases: Diseases, medicines: Medicines};
 
 const medicines: Medicines = [new Medicine('Aspirin'), new Medicine('Tea'), new Medicine('Placebo'), new Beer('Berliner Weisse', 3)];
-const diseases: Diseases = [{name: 'ebola', deadly: true}, {name: 'influenca', deadly: false}, {name: 'aids', deadly: true}]
+
+const diseases: Diseases = [
+    {name: 'ebola', deadly: true},
+    {name: 'influenca', deadly: false},
+    {name: 'aids', deadly: true}
+]
 
 const store: Store = {
     diseases: diseases,
