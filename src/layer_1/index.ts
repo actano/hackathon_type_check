@@ -6,7 +6,8 @@ class Medicine {
     }
 
     use(): void {
-        console.log('Using ' + this.name);
+        throw Error();
+        // console.log('Using ' + this.name);
     }
     
     getName(): string {
@@ -14,7 +15,7 @@ class Medicine {
     }
 }
 
-class Beer extends Medicine {
+class Bier extends Medicine {
     percentage: number;
 
     constructor(name, percentage) {
@@ -27,17 +28,19 @@ class Beer extends Medicine {
     }
 }
 
-export {Medicine, Beer};
+const store = {
+    diseases: [{name: 'Aspirin', deadly: true}, {name: 'influenca'}, {name: 'aids', deadly: true}],
+    medicines: [new Medicine('Aspirin'), new Medicine('Tea'), new Medicine('Placebo'), new Bier('Berliner Weisse', 3)]
+};
 
-// store = {
-//     diseases: [{name: 'ebola', deadly: true}, {name: 'influenca', deadly: false}, {name: 'aids', deadly: true}],
-//     medicines: [new Medicine('Aspirin'), new Medicine('Tea'), new Medicine('Placebo'), new Beer('Berliner Weisse', 3)]
-// }
-//
-// function loadDiseases() {
-//     return store.diseases
-// }
-//
-// function loadMedicins() {
-//     return store.medicines
-// }
+function loadMedicines(): Medicine[] {
+    return store.medicines
+}
+
+function loadDiseases(): Array<Object|Medicine> {
+    return store.diseases
+}
+
+export {Medicine, Bier, loadDiseases, loadMedicines};
+
+
