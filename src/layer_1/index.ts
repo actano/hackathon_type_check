@@ -37,7 +37,7 @@ function loadMedicines(): Medicine[] {
     return store.medicines
 }
 
-function loadDiseases(): Array<Object|Medicine> {
+function loadDiseases(): Object[] {
     return store.diseases
 }
 
