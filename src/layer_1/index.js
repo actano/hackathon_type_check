@@ -55,7 +55,7 @@ class Beer extends Medicine {
 }
 
 const medicinesList: Array<Medicine> = [new Medicine('Aspirin'), new Medicine('Tea'), new Medicine('Placebo'), new Beer('Berliner Weisse', 3)];
-const diseasesList: Array<{name: string, deadly: boolean}> = [{name: 'ebola', deadly: 'true'}, {name: 'influenca', deadly: false}, {name: 'aids', deadly: true}]
+const diseasesList: Array<{name: string, deadly: boolean}> = [{name: 'ebola', deadly: true}, {name: 'influenca', deadly: false}, {name: 'aids', deadly: true}]
 
 const store = {
     diseases: diseasesList,
