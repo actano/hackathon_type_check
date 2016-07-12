@@ -4,9 +4,11 @@
   "description": "Hackathon topic to test tool support with typed JS",
   "main": "index.js",
   "scripts": {
-    "test": "npm run flow && npm run build && mocha build/**/test.js",
+    "test": "npm run flow && npm run build && mocha build/**/test.js && npm run clean",
     "build": "babel ./src --out-dir=./build",
-    "flow": "flow"
+    "clean": "rm -rf ./build",
+    "flow": "flow",
+    "coffee-flow": "coffee -o ./build -c ./src && npm run flow"
   },
   "repository": {
     "type": "git",
