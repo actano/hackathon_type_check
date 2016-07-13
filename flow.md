@@ -36,6 +36,7 @@
 
 ## Refactoring Abilities
 * only indirect during build time
+* does not support automated refactoring (Nuclide)
 
 ## Call Stack
 * ./.
